@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "heebo", sans-serif;
+}
+
+ul,
+li {
+    list-style: none;
+
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+/* a:active, a:hover{
+
+} */
+
+/* reset defauld styls */
+/* css */
+:root {
+    --dark-color: #21243D;
+    --secondary: #00a8cc;
+}
+
+/* main classes */
+.container {
+    max-width: 858px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 33px;
+    padding: 27px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+.menu{
+    display: none;
+}
+header .nav-menu a {
+    color: black;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content-info h1 {
+    color: var(--dark-color);
+    max-width: 506px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 44px;
+}
+
+.header-content-info p {
+    color: var(--dark-color, );
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header-content-info div button {
+    display: inline-block;
+    border-radius: 2px;
+    background: var(--primary, #FF6464);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 8px 16px;
+    margin-top: 47px;
+    margin-bottom: 71px;
+    text-transform: capitalize;
+}
+
+
+.post {
+    background: #edf7fa;
+    padding-bottom: 32px;
+}
+
+.post-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-title h5 {
+    color: var(--dark-color);
+    font-size: 22px;
+    line-height: 60px;
+}
+
+.post-title a {
+    color: var(--secondary);
+
+}
+
+.post-content {
+    display: flex;
+    gap: 20px;
+}
+
+.post-content-item {
+    padding: 24px 27px 27px 23px;
+    background-color: beige;
+}
+
+.post-content-item h3 {
+    color: var(--dark-color, );
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+
+.post-content-item .info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 11px;
+}
+
+.post-content-item .info span {
+    color: var(--dark-color, );
+    font-size: 18px;
+}
+
+.post-content-item .info small {
+    width: 1px;
+    background-color: var(--dark-color);
+    display: block;
+    height: 20px;
+}
+
+.post-content-item p {
+    color: var(--dark-color, );
+
+}
+
+.feature {
+    padding: 15px 0 83px 0;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+
+.feature-title {
+    padding: 15px 0 83px 0;
+    color: var(--dark-color, );
+    font-size: 22px;
+    line-height: 60px;
+    margin-bottom: 22px;
+}
+
+.feature-item {
+    display: flex;
+    gap: 18px;
+    border-bottom: 1px solid #a0a0a0;
+    padding-bottom: 30px;
+}
+
+.feature-item-content h2 {
+    color: var(--dark-color);
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+
+.feature-item-content .feature-date span:first-child {
+    background-color: #142850;
+    color: #FFF;
+    border-radius: 16px;
+    padding: 0 10px;
+    font-size: 18px;
+    ;
+    font-weight: 900;
+    line-height: 60px;
+}
+
+.feature-item-content .feature-date span:last-child {
+    margin-left: 26px;
+    color: #8695A4;
+    font-size: 20px;
+
+}
+
+.feature-item-content p {
+    color: var(--dark-color);
+
+}
+
+footer {
+    padding: 51px 0 54px 0;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+footer ul li i {
+    font-size: 30px;
+    color: var(--dark-color);
+}
+
+footer p {
+    margin-top: 26px;
+    text-align: center;
+    color: var(--dark, );
+    font-size: 14px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+
+.box .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box .nav-menu a {
+    color: black;
+}
+
+h4 {
+    color: var(--dark-color, );
+    font-size: 44px;
+    font-weight: 700;
+    padding-top: 120px;
+}
+
+.box-content-item h3 {
+    color: var(--dark-color, );
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 16px;
+    padding-top: 55px;
+}
+
+.ss {
+    color: gray;
+}
+
+.box-date {
+    position: relative;
+    color: var(--dark-color, );
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 16px;
+}
+    s   
+.box-content p{
+    color: var(--dark-color, );
+font-size: 16px;
+font-weight: 400;
+padding-top: 15px;
+}
+
+.vektor{
+    max-width: 900px;
+    height: 1px;
+    background-color: gray;
+    margin-top: 25px;
+}
+
+nav .fa-bars{
+    font-size: 30px;
+    color: #444;
+    display: none;
+}
+
+@media (max-width: 600px){
+    header .nav-menu li {
+       display: none;
+
+    }
+    
+    header .nav-menu a {
+        color: black;
+    }
+    
+    .header-content {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .header-content-info h1{
+        text-align: center;
+    }
+    .header-content-info div{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .header-content-info div button {
+        display: block;
+        margin: 0 auto ;
+
+    }
+    .menu{
+        display: inline-block !important;
+        width: 30px ;
+        height: 30px;
+        border-top: 3px solid black;
+       border-bottom: 3px solid black;
+       cursor: pointer;
+    }
+    
+    
+.post {
+    padding-bottom: 38px;
+
+}
+
+.post-title {
+    justify-content: center;
+}
+
+.post-title h5 {
+    font-size: 18px;
+}
+
+.post-title a {
+   display: none;
+
+}
+
+.post-content {
+flex-wrap: wrap;
+padding: 0 10.5px;
+}
+
+.post-content-item {
+    padding: 12px 21px 22px 19px;
+}
+
+.post-content-item h3 {
+font-size: 22px;
+margin-bottom: 12px;
+}
+
+.post-content-item .info {
+gap: 24px;
+margin-bottom: 19px;
+}
+
+.post-content-item .info span {
+    font-size: 16px;
+}
+
+
+.feature {
+    padding: 3px 16px 150px 16px;
+}
+
+.feature-box {
+    gap: 50px;
+}
+
+.feature-title {
+    font-size: 18px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.feature-item {
+    flex-direction: column;
+}
+
+.feature-item-content h2 {
+    font-size: 22px;
+line-height: 30px;
+
+}
+
+}
+
+    
